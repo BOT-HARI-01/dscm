@@ -1,27 +1,70 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .main_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-}
+  .header-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    flex: 0 1 auto; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 10px;
+  }
+  
+  .header-title {
+    font-size: 34px; 
+    color: #000; 
+    text-decoration: none; 
+  }
+  
+  .nav ul {
+    list-style: none;/*removing bullet points   , Align items horizontally */
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 20px; 
+    text-decoration: none;
+    color: #3577bd; 
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    background-color: rgb(49, 175, 175);
+  }
+  .nav-button {
+    display: inline-block; 
+    padding: 5px 10px; 
+    background-color: #007bff; 
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .nav-button:hover {
+    background-color: #585b5e; 
+    color: #f8f9fa;
+    transition: background-color 0.4s;
+  }
+
+  .nav-button:active {
+    background-color: #004494; 
+  }
+  
+  footer {
+    flex: 0 0 auto; /* footer takes only as much space as needed */
+    background-color: #f8f9fa; 
+    text-align: center;
+    padding: 10px 0;
+  }

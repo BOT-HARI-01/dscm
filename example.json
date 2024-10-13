@@ -1,0 +1,16 @@
+[
+    {
+        "username": "hospital_admin",
+        "passwordHash": "$2b$10$eW5G9xTn.3FzQ0hSTXq2IeYHHR8eeY1oAc3VZw.TuWoCXz4ZsRi5O",  
+        "email": "admin@hospital.com",
+        "role": "admin",
+        "createdAt": { "$date": "2023-09-22T00:00:00Z" }
+    },
+    {
+        "username": "doctor_jane",
+        "passwordHash": "$2b$10$uKZCIB8hOkX6qFLklIkA8.9r3d2bV0kEX0D30vnu2sROKj8gMgW/e",  
+        "email": "jane.doe@hospital.com",
+        "role": "doctor",
+        "createdAt": { "$date": "2023-09-22T00:00:00Z" }
+    }
+]
